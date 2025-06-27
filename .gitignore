@@ -3,8 +3,11 @@ data/
 application_data/
 archive/
 
-# User face data (privacy)
-FaceID_WebApp/user_data/
+# Ignore all files inside user_data/
+FaceID_WebApp/user_data/*
+
+# But do NOT ignore the folder itself
+!FaceID_WebApp/user_data/.gitkeep
 *.jpg
 *.jpeg
 *.png
