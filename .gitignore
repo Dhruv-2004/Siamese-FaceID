@@ -1,0 +1,56 @@
+# Large training datasets and generated data
+data/
+application_data/
+archive/
+
+# User face data (privacy)
+FaceID_WebApp/user_data/
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.avi
+*.mov
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+# Note: Keep main notebooks like Siamese_Network.ipynb in the repo
+# *.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Training artifacts (optional - uncomment if models are too large)
+# models/siamese_network.h5
+# models/training_checkpoints/
+
+# Streamlit
+.streamlit/
