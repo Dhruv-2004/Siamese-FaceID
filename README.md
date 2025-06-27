@@ -191,21 +191,6 @@ streamlit run app.py
 - User data excluded from version control
 - Complete offline operation
 
-## 🏃‍♂️ Running the Application
-
-### **Start the Web App**
-```bash
-cd FaceID_WebApp
-streamlit run app.py
-# Access at http://localhost:8501
-```
-
-### **Viewing Model Development (Optional)**
-```bash
-# View the model development process (reference only)
-jupyter notebook Siamese_Network.ipynb
-```
-
 ## 🔍 Model Development & Training
 
 The `Siamese_Network.ipynb` notebook contains the complete implementation and training of the Siamese neural network based on the research by Koch et al. (2015). **New users do NOT need to run this notebook** - the pre-trained model is already included and ready to use.
