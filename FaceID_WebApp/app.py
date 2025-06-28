@@ -9,15 +9,15 @@ import time
 # Import custom modules with fallback
 try:
     from utils.face_detection import FaceDetector
-    print("✅ Using MTCNN face detection")
+    print("Using MTCNN face detection")
 except ImportError as e:
-    print(f"⚠️  MTCNN not available: {e}")
-    print("🔄 Falling back to OpenCV face detection...")
+    print(f"MTCNN not available: {e}")
+    print("Falling back to OpenCV face detection...")
     try:
         from utils.face_detection_opencv import FaceDetector
-        print("✅ Using OpenCV face detection")
+        print("Using OpenCV face detection")
     except ImportError as e2:
-        print(f"❌ OpenCV face detection also failed: {e2}")
+        print(f"OpenCV face detection also failed: {e2}")
         st.error("Face detection modules not available. Please install required dependencies.")
         st.stop()
 
@@ -31,8 +31,8 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-        'Get Help': 'https://github.com/your-repo/FaceID',
-        'Report a bug': 'https://github.com/your-repo/FaceID/issues',
+        'Get Help': 'https://github.com/Dhruv-2004/Siamese-FaceID',
+        'Report a bug': 'https://github.com/Dhruv-2004/Siamese-FaceID/issues',
         'About': '''
         # FaceID v2.0
         Advanced face verification system powered by Siamese Neural Networks.
@@ -362,7 +362,7 @@ def main():
         st.markdown("---")
         st.markdown("""
         <div style="text-align: center; color: rgba(255,255,255,0.6); font-size: 0.8rem;">
-            <p>v2.0 | Built with ❤️</p>
+            <p>v2.0 | Built with ❤️ by Dhruv Suvagiya</p>
             <p>🛡️ Privacy-First Design</p>
         </div>
         """, unsafe_allow_html=True)
